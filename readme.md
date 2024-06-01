@@ -4,6 +4,7 @@ specificiations:
 -3 pages
 -dozens of different css selectors
 -at least 10 unique html tags
+-a table of images in the gallery page
 -two forms (one to submit an image, and one to send a message)
 -a dropdown menu within the compose message form
 -Text and images on each page
