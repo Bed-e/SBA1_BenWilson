@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    <div class="container whole-body">
+    <div
+      class="container whole-body"
+      style="
+        background-image: url(../assets/garf-with-friends.jpg);
+        background-size: cover;
+      "
+    >
       <div class="container header">
         <div class="container header-section header-section-1">
           <li class="wix-madefor-display-normal">
@@ -39,6 +45,52 @@
             >
           </li>
         </div>
+      </div>
+      <div class="friends-main container">
+        <div class="friends-and-chats container">
+          <h2 class="wix-madefor-display-normal">Friends:</h2>
+          <ul>
+            <li class="wix-madefor-display-normal">Garf</li>
+            <li class="wix-madefor-display-normal">Odie</li>
+            <li class="wix-madefor-display-normal">Jon</li>
+            <li class="wix-madefor-display-normal">Penelope</li>
+            <li class="wix-madefor-display-normal">Nermal</li>
+          </ul>
+          <h2 class="wix-madefor-display-normal">New Messages</h2>
+          <ul>
+            <li class="wix-madefor-display-normal">
+              garfield: give me lasagna
+            </li>
+            <li class="wix-madefor-display-normal">jon: i'm so pathetic</li>
+          </ul>
+        </div>
+        <div class="container new-message">
+          <h1 class="wix-madefor-display-normal">Compose New Message</h1>
+          <form action="#">
+            <p class="wix-madefor-display-normal">Recipient</p>
+            <select name="Recipient" id="Recipient">
+              <option value="#">garf</option>
+              <option value="#">odie</option>
+              <option value="#">Jon</option>
+              <option value="#">Penelope</option>
+              <option value="#">Nermal</option>
+            </select>
+            <p class="wix-madefor-display-normal">Subject:</p>
+            <input type="text" />
+            <p class="wix-madefor-display-normal">Body:</p>
+            <textarea name="Message area"> </textarea><br />
+            <button class="wix-madefor-display-normal">Send!</button>
+          </form>
+        </div>
+      </div>
+      <div class="container footer wix-madefor-display-normal">
+        <ul class="container footer-container friends-footer">
+          <li>|Help|</li>
+          <li>|Report Suspicious Behavior|</li>
+          <li>|contact|</li>
+          <li>|Team|</li>
+          <li>|Support Us|</li>
+        </ul>
       </div>
     </div>
   </body>

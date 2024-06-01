@@ -5,6 +5,7 @@
 }
 
 .whole-body {
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -83,7 +84,7 @@
 .right {
   flex-direction: column;
   flex: 1;
-  background-color: rgb(250, 221, 0, 0.4);
+  background-color: rgba(250, 221, 0, 0.4);
 }
 .right * {
   list-style: none;
@@ -117,34 +118,137 @@
   align-items: center;
   flex: 5;
   flex-direction: column;
-  background-image: url(../assets/Jon_arbuckle.png);
   padding: 0 10% 0 10%;
 }
 
 .gallery-main-section h1 {
-  background-color: rgba(41, 179, 179, 0.6);
-  border-width: 8px 35px;
-  padding: 10px;
-  width: 30%;
+  background-color: rgba(41, 179, 179, 0.8);
+  border-radius: 8px 45px;
+  padding: 3px 10px;
+  margin: 12px;
+  font-size: 55px;
   flex: 1;
   text-align: center;
   color: rgb(250, 221, 0);
+  font-weight: 700;
+}
+
+.gallery-main-section table,
+tr,
+td {
+  background-color: rgb(250, 100, 255, 0.4);
 }
 
 .gallery-main-section table {
-  background-color: rgb(250, 100, 255, 0.4);
-  border: 1px black solid;
+  display: flex;
+  padding: 8px;
 }
 
 .gallery-main-section table img {
-  max-width: 100%;
+  width: 100%;
+  max-height: 300px;
 }
 
 .gallery-main-section table tr {
+  align-content: center;
+
   display: flex;
 }
 
 .gallery-main-section table tr td {
   padding: 3px;
   flex: 1;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px;
+}
+
+.gallery-main-section table tr td p {
+  text-align: center;
+  background-color: rgb(250, 221, 0, 0.7);
+  font-family: "";
+  padding: 5px 15px;
+  font-size: 20px;
+  margin: 8px;
+  line-height: 20px;
+  font-weight: 700;
+  box-shadow: 5px rgba(255, 94, 0, 0.5) 5px;
+}
+
+.img-submit-form {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-submit-form h1 {
+  background-color: rgba(41, 179, 179, 0.8);
+  border-radius: 8px 45px;
+  padding: 3px 10px;
+  margin: 12px;
+  font-size: 50px;
+  text-align: center;
+  color: rgb(250, 221, 0);
+  font-weight: 700;
+  flex-direction: column;
+}
+
+.img-submit-form form {
+  border: goldenrod 5px solid;
+  box-shadow: 10px 10px 10px black;
+  background-color: rgb(250, 221, 0, 0.8);
+  color: rgb(100, 0, 100);
+  padding: 10px 30px;
+  max-width: 40%;
+  font-weight: 800;
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.friends-main {
+  flex: 5;
+  display: flex;
+  flex-direction: row;
+}
+
+.friends-main > * {
+  border: black 2px solid;
+}
+
+.friends-and-chats {
+  flex: 2;
+  flex-direction: column;
+  margin: 10%;
+  padding: 8px;
+  background-color: rgb(250, 221, 0, 0.8);
+}
+
+.new-message {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 100, 255, 0.8);
+  margin: 10%;
+  padding: 8px;
+}
+
+.friends-and-chats ul {
+  list-style: none;
+  width: 60%;
+  align-items: flex-start;
+}
+
+.new-message button:hover {
+  rotate: 180deg;
+  animation-duration: 100ms;
+}
+
+.friends-footer {
+  flex: 1;
+  background-color: rgba(0, 179, 179, 1);
 }
